@@ -1,27 +1,29 @@
 {
   "name": "@aptabase/tauri",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "private": false,
   "type": "module",
-  "description": "Tauri Plugin for Aptabase: Open Source, Privacy-First and Simple Analytics for Mobile, Desktop and Web Apps",
+  "description": "Tauri Plugin for Aptabase: but rustls-tls instand of open-ssl",
   "author": "Guilherme Oenning",
   "browser": "webview-dist/index.js",
   "main": "webview-dist/index.js",
   "types": "webview-dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aptabase/tauri-plugin-aptabase.git"
+    "url": "git+https://github.com/delta-comic/tauri-plugin-aptabase-rustls.git"
   },
   "bugs": {
-    "url": "https://github.com/aptabase/tauri-plugin-aptabase/issues"
+    "url": "https://github.com/delta-comic/tauri-plugin-aptabase-rustls/issues"
   },
-  "homepage": "https://github.com/aptabase/tauri-plugin-aptabase",
+  "homepage": "https://github.com/delta-comic/tauri-plugin-aptabase-rustls",
   "scripts": {
     "build": "rollup -c ./webview-src/rollup.config.js",
     "watch": "rollup -c ./webview-src/rollup.config.js -w",
-    "prepublishOnly": "npm run build",
-    "pretest": "npm run build"
+    "prepublishOnly": "pnpm run build",
+    "pretest": "pnpm run build",
+    "postinstall": "pnpm install && pnpm run build"
   },
+  "packageManager": "pnpm@10.27.0",
   "files": [
     "README.md",
     "LICENSE",
