@@ -12,22 +12,13 @@ Install the Core plugin by adding the following to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-tauri-plugin-aptabase = "1.0.0"
-```
-
-```toml
-[dependencies]
-tauri-plugin-aptabase = { git = "https://github.com/aptabase/tauri-plugin-aptabase" }
+tauri-plugin-aptabase = { git = "https://github.com/delta-comic/tauri-plugin-aptabase-rustls", branch = "main" }
 ```
 
 You can install the JavaScript Guest bindings using your preferred JavaScript package manager
 
 ```bash
-npm add @aptabase/tauri
-```
-
-```bash
-npm add https://github.com/aptabase/tauri-plugin-aptabase
+npm add https://github.com/delta-comic/tauri-plugin-aptabase-rustls
 ```
 
 ## Usage
