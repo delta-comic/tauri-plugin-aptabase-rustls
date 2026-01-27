@@ -18,7 +18,7 @@
   "homepage": "https://github.com/delta-comic/tauri-plugin-aptabase-rustls",
   "scripts": {
     "build": "tsdown --config ./tsdown.config.ts",
-    "postinstall": "pnpm run build"
+    "prepare": "pnpm i && pnpm run build"
   },
   "packageManager": "pnpm@10.27.0",
   "files": [
@@ -28,11 +28,9 @@
     "webview-dist",
     "package.json"
   ],
-  "devDependencies": {
-    "tsdown": "^0.20.1",
-    "typescript": "^5.7.2"
-  },
   "dependencies": {
+    "tsdown": "^0.20.1",
+    "typescript": "^5.7.2",
     "@tauri-apps/api": "^2.1.1"
   }
 }
