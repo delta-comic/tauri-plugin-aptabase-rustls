@@ -24,8 +24,9 @@
   "files": [
     "README.md",
     "LICENSE",
+    "./tsconfig.json",
+    "./tsdown.config.ts",
     "webview-src",
-    "webview-dist",
     "package.json"
   ],
   "dependencies": {
