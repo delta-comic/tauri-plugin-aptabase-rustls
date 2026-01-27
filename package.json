@@ -17,28 +17,22 @@
   },
   "homepage": "https://github.com/delta-comic/tauri-plugin-aptabase-rustls",
   "scripts": {
-    "build": "rollup -c ./webview-src/rollup.config.js",
-    "watch": "rollup -c ./webview-src/rollup.config.js -w",
-    "prepublishOnly": "pnpm run build",
-    "pretest": "pnpm run build",
+    "build": "tsdown --config ./tsdown.config.ts",
     "postinstall": "pnpm run build"
   },
   "packageManager": "pnpm@10.27.0",
   "files": [
     "README.md",
     "LICENSE",
+    "webview-src",
     "webview-dist",
     "package.json"
   ],
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.3.0",
-    "@rollup/plugin-typescript": "^12.1.1",
-    "@rollup/plugin-terser": "^0.4.4",
-    "rollup": "^4.27.4",
+    "tsdown": "^0.20.1",
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@tauri-apps/api": "^2.1.1",
-    "tslib": "^2.8.1"
+    "@tauri-apps/api": "^2.1.1"
   }
 }
