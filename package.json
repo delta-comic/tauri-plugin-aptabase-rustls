@@ -17,16 +17,13 @@
   },
   "homepage": "https://github.com/delta-comic/tauri-plugin-aptabase-rustls",
   "scripts": {
-    "build": "tsdown --config ./tsdown.config.ts",
-    "postinstall": "pnpm run build"
+    "build": "tsdown --config ./tsdown.config.ts"
   },
   "packageManager": "pnpm@10.27.0",
   "files": [
     "README.md",
     "LICENSE",
-    "./tsconfig.json",
-    "./tsdown.config.ts",
-    "webview-src",
+    "webview-dist",
     "package.json"
   ],
   "dependencies": {
